@@ -72,16 +72,16 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 top-[65px] bg-background z-40 md:hidden transition-transform duration-300 ease-in-out",
+          "fixed inset-0 top-[65px] bg-white dark:bg-gray-900 z-40 md:hidden transition-transform duration-300 ease-in-out",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="flex flex-col space-y-4 p-4">
+        <div className="flex flex-col space-y-4 p-4 bg-gray-400">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-navy-900 hover:text-primary text-lg font-medium py-2 border-b border-border"
+              className="text-navy-900 hover:text-primary text-lg font-medium py-2 border-b border-border/50"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}
