@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -110,14 +109,19 @@ export default {
 				slideRight: {
 					'0%': { transform: 'translateX(-100%)', opacity: '0' },
 					'100%': { transform: 'translateX(0)', opacity: '1' }
-				}
+				},
+				blink: {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fadeIn 0.5s ease-out forwards',
 				'slide-up': 'slideUp 0.5s ease-out forwards',
-				'slide-right': 'slideRight 0.5s ease-out forwards'
+				'slide-right': 'slideRight 0.5s ease-out forwards',
+				blink: 'blink 1s step-end infinite',
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
