@@ -47,7 +47,7 @@ const About = () => {
             <p className="text-navy-600">
               Currently pursuing BTech in Computer Science from Lovely
               Professional University with a strong academic record (GPA:
-              8.32/10.0). I've developed multiple successful projects and
+              8.89/10.0). I've developed multiple successful projects and
               continuously enhance my skills through professional training and
               certifications.
             </p>
