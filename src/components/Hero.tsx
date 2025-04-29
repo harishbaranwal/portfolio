@@ -9,7 +9,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center py-12 sm:py-16 bg-gradient-to-br from-background to-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-16 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <div className="animate-fade-in text-center lg:text-left">
+          <div className="animate-fade-in text-center lg:text-left pt-12">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Hero = () => {
 
             <div className="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6 justify-center lg:justify-start">
               <Button className="bg-primary hover:bg-primary/90 text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2">
-                View Projects <ArrowRight className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4" />
+              <a href="#projects">View Projects</a> <ArrowRight className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4" />
               </Button>
               <Button variant="outline" asChild className="text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2">
                 <a href="#contact">Contact with Me</a>
@@ -58,14 +58,7 @@ const Hero = () => {
               >
                 <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
-              <a
-                href="mailto:harishbaranwal2005@gmail.com?subject=Portfolio%20Contact&body=Hello%20Harish,"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-navy-700 hover:text-primary transition-colors"
-              >
-                <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
-              </a>
+            
             </div>
           </div>
 

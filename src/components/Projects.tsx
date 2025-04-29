@@ -10,14 +10,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Somana",
+      title: "Shine E-commerce",
       description:
-        "A full-stack data-sharing cloud website. Users can upload and share stories, music, and podcasts.",
-      image: "/p-1.png",
+        "Shine-Ecommerce is a MERN stack-based online shopping platform with features like user authentication, product management, and seamless checkout.",
+      image: "/shine.png",
       category: "fullstack",
       technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      githubUrl: "https://github.com/harishbaranwal",
-      liveUrl: "https://somana.in",
+      githubUrl: "https://github.com/harishbaranwal/Shine_Ecommerce",
+      liveUrl: "https://shineecommerce.vercel.app/",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const Projects = () => {
       image: "/p-2.png",
       category: "frontend",
       technologies: ["React", "TypeScript", "Redux", "Firebase", "ChartJS"],
-      githubUrl: "https://github.com/harishbaranwal",
+      githubUrl: "https://github.com/harishbaranwal/Crypto-Trading-Wallet-Platform",
       liveUrl: "https://trade-pulse-finance.lovable.app/",
     },
     {
@@ -37,8 +37,8 @@ const Projects = () => {
         "A scalable RESTful API for notes management with authentication, authorization and data validation.",
       image: "/p-3.png",
       category: "backend",
-      technologies: ["Node.js", "Express", "PostgreSQL", "JWT", "Docker"],
-      githubUrl: "https://github.com/harishbaranwal",
+      technologies: ["PHP", "PostgreSQL", "JWT", "Docker"],
+      githubUrl: "https://github.com/harishbaranwal/Notes-App",
       liveUrl: "https://chrono-note-craft.lovable.app",
     },
   ];

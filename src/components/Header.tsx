@@ -15,6 +15,7 @@ const Header = () => {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -43,7 +44,7 @@ const Header = () => {
 
           <div className="hidden md:block">
             <a
-              href="https://drive.google.com/file/d/1TsSfWrBNwc-Q3JzJ-p9t-wpJeyuHZ4tA/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xkljzKQl1IrKeksttaTnr2LwBbIdxsAL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
