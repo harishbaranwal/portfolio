@@ -73,55 +73,62 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="overflow-hidden card-hover">
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
+          
+<Card key={project.id} className="overflow-hidden card-hover flex flex-col h-full">
+<div className="h-38 md:h-48 lg:h-56 overflow-hidden">
+    <img
+      src={project.image}
+      alt={project.title}
+      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+    />
+  </div>
 
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-bold text-navy-900 mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-navy-600 mb-4">{project.description}</p>
+  {/* Flex-1 ensures this section takes all remaining space between image and footer */}
+  <CardContent className="pt-6 flex-1 flex flex-col justify-between">
+    <div>
+      <h3 className="text-xl font-bold text-navy-900 mb-2">
+        {project.title}
+      </h3>
+      <p className="text-navy-600 mb-2">{project.description}</p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, index) => (
-                    <Badge
-                      key={index}
-                      variant="secondary"
-                      className="bg-secondary text-navy-700"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
+      <div className="flex flex-wrap gap-2">
+        {project.technologies.map((tech, index) => (
+          <Badge
+            key={index}
+            variant="secondary"
+            className="bg-secondary text-navy-700"
+          >
+            {tech}
+          </Badge>
+        ))}
+      </div>
+    </div>
+  </CardContent>
 
-              <CardFooter className="pt-0 flex justify-between">
-                <Button variant="outline" size="sm" asChild>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="mr-2 h-4 w-4" /> Code
-                  </a>
-                </Button>
-                <Button size="sm" asChild>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                  </a>
-                </Button>
-              </CardFooter>
-            </Card>
+  {/* Footer fixed to bottom by being outside flex-1 section */}
+  <CardFooter className="pt-3 border-t border-border flex justify-between">
+    <Button variant="outline" size="sm" asChild>
+      <a
+        href={project.githubUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Github className="mr-2 h-4 w-4" /> Code
+      </a>
+    </Button>
+    <Button size="sm" asChild>
+      <a
+        href={project.liveUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+      </a>
+    </Button>
+  </CardFooter>
+</Card>
+
+
           ))}
         </div>
       </div>
